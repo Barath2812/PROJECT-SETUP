@@ -1,0 +1,172 @@
+/* Total section that wraps everything */
+/* Total container covering the entire screen */
+.total {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-image: url('/src/assets/admin2.jpg'); /* Path to the background image */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Don't repeat the background image */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  position: relative;
+  padding: 20px; /* Add some padding for small screens */
+}
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Container for the form and content */
+.getstartedcontainer {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 10px; /* Slightly rounded corners */
+  text-align: center;
+  max-width: 450px; /* Max width for larger screens */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .total {
+    padding: 10px; /* Reduce padding on medium screens */
+  }
+
+  .container {
+    padding: 30px; /* Reduce padding on medium screens */
+    max-width: 90%; /* Make container width more flexible */
+  }
+
+  h3 {
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+
+  h6 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px; /* Further reduce padding on small screens */
+    max-width: 95%; /* Make the container almost full width */
+  }
+
+  h1 {
+    font-size: 1.6em; /* Adjust font size further for small screens */
+  }
+
+  h2 {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .logo {
+    max-width: 120px; /* Resize logo for small screens */
+    background-image: url('/src/assets/logo.png');
+  }
+}
+
+  
+  .logo {
+    width: 100px; /* Logo size */
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .getstarteddropdown {
+    margin: 20px 0;
+  }
+  
+  select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .adminLogin {
+    margin-top: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .getStartedButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .getStartedButton:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    .getStartedButton {
+      padding: 12px 24px;
+    }
+  }
+  
