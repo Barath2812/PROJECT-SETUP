@@ -12,7 +12,7 @@ const TopicPage = ({ userRole }) => {
   const [success, setSuccess] = useState('');
 
   // Base API URL
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://project-setup-vcdb.onrender.com';
 
   // Retrieve course data from sessionStorage
   const courseData = JSON.parse(sessionStorage.getItem("courseData"));
