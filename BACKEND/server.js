@@ -8,6 +8,13 @@ require('dotenv').config(); // To load environment variables
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+// Serve static files from the 'dist' directory
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Catch-all route to serve index.html for any other route
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
 // MongoDB URI from environment variables
 const dbURI = 'mongodb+srv://igris6302:GkuJ8cVKfhRu9rZa@cluster0.jcwgt.mongodb.net/?retryWrites=true&w=majority';
