@@ -94,10 +94,10 @@ const StudentunitPage = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link" to="/">Home</a>
+                  <Link className="nav-link" to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" to="/student-course-selection">Course</a>
+                  <Link className="nav-link" to="/student-course-selection">Course</Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active">Units</a>
