@@ -28,7 +28,7 @@ const GetStartedPage = () => {
   const handleLoginSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:5000/login', {
+    fetch('https://project-setup-vcdb.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
