@@ -19,7 +19,7 @@ const AdminunitPage = () => {
     setCourseData(storedCourseData);
 
     // Fetch course data from server
-    fetch("http://localhost:5000/course")
+    fetch("https://project-setup-vcdb.onrender.com/course")
       .then((response) => response.json())
       .then((data) => {
         const { regulation, yearOfStudy, semester, course } = storedCourseData;
