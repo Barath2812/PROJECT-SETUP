@@ -20,7 +20,7 @@ const StudentCourseSelection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/course");
+        const response = await fetch("https://project-setup-vcdb.onrender.com/course");
         if (!response.ok) throw new Error("Failed to fetch course data");
 
         const result = await response.json();
