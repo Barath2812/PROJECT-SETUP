@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./AdminunitPage.css"; // Import CSS module
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const AdminCourseSelection = () => {
   const [data, setData] = useState([]);
@@ -104,7 +104,7 @@ const AdminCourseSelection = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link"  href="https://project-setup-1.onrender.com/">Home</a>
+                  <Link className="nav-link"  to="/">Home</Link >
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active">Course</a>
