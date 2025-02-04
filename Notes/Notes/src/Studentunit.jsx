@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminunitPage.css"; // Import the CSS file for styling
-
+import { Link } from "react-router-dom";
 
 const StudentunitPage = () => {
   const [courseData, setCourseData] = useState(null);
@@ -94,10 +94,10 @@ const StudentunitPage = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="https://project-setup-1.onrender.com/">Home</a>
+                  <a className="nav-link" to="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://project-setup-1.onrender.com/student-course-selection">Course</a>
+                  <a className="nav-link" to="/student-course-selection">Course</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active">Units</a>
