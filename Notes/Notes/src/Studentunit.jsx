@@ -94,10 +94,10 @@ const StudentunitPage = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="https://project-setup-vcdb.onrender.com/">Home</a>
+                  <a className="nav-link" href="https://project-setup-1.onrender.com/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://project-setup-vcdb.onrender.com/student-course-selection">Course</a>
+                  <a className="nav-link" href="https://project-setup-1.onrender.com/student-course-selection">Course</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active">Units</a>
