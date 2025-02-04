@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom';
 import GetStartedPage from "./GetStartedPage.jsx";
 import AdminCourseSelection from "./AdminCourseSelection.jsx";
 import AdminUnitPage from "./Adminunit.jsx";
