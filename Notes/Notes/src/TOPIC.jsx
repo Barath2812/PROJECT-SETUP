@@ -148,9 +148,9 @@ const TopicPage = ({ userRole }) => {
             </button4>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href={userRole === 'admin' ? "/admin-course-selection" : "/student-course-selection"}>Course</a></li>
-                <li className="nav-item"><a className="nav-link" href={userRole === 'admin' ? "/admin-unit" : "/student-unit"}>Units</a></li>
+                <li className="nav-item"><a className="nav-link" href="https://project-setup-vcdb.onrender.com/">Home</a></li>
+                <li className="nav-item"><a className="nav-link" href={userRole === 'admin' ? "https://project-setup-vcdb.onrender.com/admin-course-selection" : "https://project-setup-vcdb.onrender.com/student-course-selection"}>Course</a></li>
+                <li className="nav-item"><a className="nav-link" href={userRole === 'admin' ? "https://project-setup-vcdb.onrender.com/admin-unit" : "https://project-setup-vcdb.onrender.com/student-unit"}>Units</a></li>
                 <li className="nav-item"><a className="nav-link active" href="#">Topics</a></li>
               </ul>
             </div>
