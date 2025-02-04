@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AdminunitPage.css"; // Import the CSS file for styling
+import { Link } from "react-router-dom";
 
 const TopicPage = ({ userRole }) => {
   const [topics, setTopics] = useState([]);
@@ -148,10 +149,10 @@ const TopicPage = ({ userRole }) => {
             </button4>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><a className="nav-link" href="https://project-setup-1.onrender.com/">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href={userRole === 'admin' ? "https://project-setup-1.onrender.com/admin-course-selection" : "https://project-setup-1.onrender.com/student-course-selection"}>Course</a></li>
-                <li className="nav-item"><a className="nav-link" href={userRole === 'admin' ? "https://project-setup-1.onrender.com/admin-unit" : "https://project-setup-1.onrender.com/student-unit"}>Units</a></li>
-                <li className="nav-item"><a className="nav-link active" href="#">Topics</a></li>
+                <li className="nav-item"><Link className="nav-link" to="https://project-setup-1.onrender.com/">Home</Link></li>
+                <li className="nav-item"><Link className="nav-link" to={userRole === 'admin' ? "/admin-course-selection" : "/student-course-selection"}>Course</Link></li>
+                <li className="nav-item"><Link className="nav-link" to={userRole === 'admin' ? "/admin-unit" : "/student-unit"}>Units</Link></li>
+                <li className="nav-item"><Link className="nav-link active" to="#">Topics</Link></li>
               </ul>
             </div>
           </div>
