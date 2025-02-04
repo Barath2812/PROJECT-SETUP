@@ -104,7 +104,7 @@ const StudentCourseSelection = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link " href="/">Home</a>
+                  <a className="nav-link " href="https://project-setup-vcdb.onrender.com/">Home</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active">Course</a>
