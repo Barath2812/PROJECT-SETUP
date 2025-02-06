@@ -159,9 +159,9 @@ const TopicPage = ({ userRole }) => {
         </nav>
       </header>
 
-      <div className="container mt-5 pt-5">
+      <main className="main-content">
         {/* Replace the h2 with the h4 displaying course information */}
-      
+         <div className="container">
         {userRole === 'admin' && (
           <div className="syllabus-container ">
             <div className="syllabus-card text-center ">
@@ -175,13 +175,13 @@ const TopicPage = ({ userRole }) => {
             </div>
           </div>
         )}
-</div>
-   <div className="container mt-4 pb-5">
+
+   <div className="topics-container ">
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
           {topics.length > 0 ? (
-            <div className="row">
+            <div className="topics-grid">
               {topics.map((topic, index) => (
                 <div className="col-md-4 mb-3" key={index}>
                   <div className="card">
@@ -205,7 +205,10 @@ const TopicPage = ({ userRole }) => {
             <p>No topics added yet.</p>
           )}
         </div>
-      </div>
+     </div>
+           </div>
+        
+      </main>
 
       <footer className="text-white text-center py-3">
         <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
