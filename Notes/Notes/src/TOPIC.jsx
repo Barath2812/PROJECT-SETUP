@@ -134,7 +134,7 @@ const TopicPage = ({ userRole }) => {
   };
 
   return (
-    <div className="col-12 bg-light ">
+    <main className="col-12 bg-light ">
       <header className="fixed-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
@@ -159,9 +159,9 @@ const TopicPage = ({ userRole }) => {
         </nav>
       </header>
 
-      <main className="main-content">
+      <main className="container">
         {/* Replace the h2 with the h4 displaying course information */}
-         <div className="container">
+       
         {userRole === 'admin' && (
           <div className="syllabus-container ">
             <div className="syllabus-card text-center ">
@@ -176,7 +176,7 @@ const TopicPage = ({ userRole }) => {
           </div>
         )}
 
-   <div className="topics-container ">
+   <div className="container ">
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
@@ -206,14 +206,14 @@ const TopicPage = ({ userRole }) => {
           )}
         </div>
      </div>
-           </div>
+    
         
-      </main>
+      </div>
 
       <footer className="text-white text-center py-3">
         <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
       </footer>
-    </div>
+    </main>
   );
 };
 
