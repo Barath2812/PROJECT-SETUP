@@ -1,11 +1,6 @@
 
 /* General Styles */
 /* Add these to your existing CSS */
-.main-content {
-  padding-top: 80px; /* Match navbar height */
-  padding-bottom: 60px; /* Match footer height */
-  min-height: calc(100vh - 140px); /* Viewport height - (header + footer heights) */
-}
 
 .syllabus-container {
   margin-bottom: 35px;
@@ -16,11 +11,7 @@
   /* Remove height: 100% */
 }
 
-.topics-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
+
 body {
  
   font-family: Arial, sans-serif;
