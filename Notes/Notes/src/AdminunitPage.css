@@ -1,7 +1,7 @@
 
 /* General Styles */
 body {
-  height:100dvh;
+ 
   font-family: Arial, sans-serif;
   background-color: #f8f9fa; /* Light background for the entire page */
 }
@@ -33,13 +33,13 @@ h1, h2 {
 
 /* Main Container */
 .container {
-  margin-top: 80px;;
+  margin-top: 20px;;
 }
 
 /* Syllabus Card */
 .syllabus-container {
   margin-bottom: 35px;
-  margin-top: 20px;
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
