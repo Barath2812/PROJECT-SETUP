@@ -1,6 +1,7 @@
 
 /* General Styles */
 body {
+  height:100dvh;
   font-family: Arial, sans-serif;
   background-color: #f8f9fa; /* Light background for the entire page */
 }
