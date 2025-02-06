@@ -37,14 +37,34 @@ h1, h2 {
 }
 
 /* Syllabus Card */
+/* Add these adjustments to your existing CSS */
+
+/* Remove height: 100% from syllabus-container */
 .syllabus-container {
   margin-bottom: 35px;
   margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  /* Remove height: 100% */
 }
+
+/* Add margin to the topics container */
+.topics-container {
+  margin-bottom: 100px; /* Ensures space before footer */
+}
+
+/* Adjust card styling for better spacing */
+.card {
+  margin-bottom: 20px; /* Space between topic cards */
+}
+
+/* Ensure footer stays at bottom */
+footer {
+  position: relative;
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
 
 .syllabus-card {
   background-color: #ffffff; /* White background for the card */
