@@ -134,7 +134,7 @@ const TopicPage = ({ userRole }) => {
   };
 
   return (
-    <div className="col-12 bg-light d-flex flex-column min-vh-100">
+    <div className="col-12 bg-light ">
       <header className="fixed-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
@@ -161,7 +161,7 @@ const TopicPage = ({ userRole }) => {
 
       <main className="container flex-grow-1 mt-5 pt-5 min-vh-auto">
         {/* Replace the h2 with the h4 displaying course information */}
-        <div className="container flex-grow-1 mt-5 pt-5 min-vh-auto">
+        
 
         {userRole === 'admin' && (
           <div className="syllabus-container ">
@@ -176,7 +176,8 @@ const TopicPage = ({ userRole }) => {
             </div>
           </div>
         )}
-       </div>
+    </main>
+        <main className="container flex-grow-1 mt-5 pt-5 min-vh-auto">
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
