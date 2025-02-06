@@ -135,7 +135,7 @@ const TopicPage = ({ userRole }) => {
 
   return (
     <div className="col-12 bg-light ">
-      <header className="fixed-top">
+      <header className="sticky-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
             <h1 className="navbar-brand">SATHYABAMA</h1>
