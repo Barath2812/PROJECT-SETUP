@@ -135,7 +135,7 @@ const TopicPage = ({ userRole }) => {
 
   return (
     <div className="col-12 bg-light ">
-      <header className="sticky-top">
+      <header className="fixed-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
             <h1 className="navbar-brand">SATHYABAMA</h1>
@@ -159,7 +159,7 @@ const TopicPage = ({ userRole }) => {
         </nav>
       </header>
 
-      <main className="container flex-grow-1 mt-5 pt-5 min-vh-100">
+      <div className="container mt-5 pt-5">
         {/* Replace the h2 with the h4 displaying course information */}
       
         {userRole === 'admin' && (
@@ -175,8 +175,8 @@ const TopicPage = ({ userRole }) => {
             </div>
           </div>
         )}
-
-  
+</div>
+   <div className="container mt-4 pb-5">
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
@@ -205,7 +205,7 @@ const TopicPage = ({ userRole }) => {
             <p>No topics added yet.</p>
           )}
         </div>
-      </main>
+      </div>
 
       <footer className="text-white text-center py-3">
         <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
