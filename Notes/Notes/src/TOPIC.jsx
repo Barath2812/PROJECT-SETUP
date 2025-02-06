@@ -159,7 +159,7 @@ const TopicPage = ({ userRole }) => {
         </nav>
       </header>
 
-      <main className="container flex-grow-1 mt-5 pt-5">
+      <main className="container flex-grow-1 min-vh-100 mt-5 pt-5">
         {/* Replace the h2 with the h4 displaying course information */}
         
 
