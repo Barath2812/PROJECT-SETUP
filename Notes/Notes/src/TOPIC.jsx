@@ -159,7 +159,7 @@ const TopicPage = ({ userRole }) => {
         </nav>
       </header>
 
-      <main className="container">
+      <div className="container">
         {/* Replace the h2 with the h4 displaying course information */}
        
         {userRole === 'admin' && (
