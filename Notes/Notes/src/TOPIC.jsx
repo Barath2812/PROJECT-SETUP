@@ -181,7 +181,7 @@ const TopicPage = ({ userRole }) => {
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
           {topics.length > 0 ? (
-            <div className="topics-grid">
+            <div className="row">
               {topics.map((topic, index) => (
                 <div className="col-md-4 mb-3" key={index}>
                   <div className="card">
