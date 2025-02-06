@@ -1,5 +1,26 @@
 
 /* General Styles */
+/* Add these to your existing CSS */
+.main-content {
+  padding-top: 80px; /* Match navbar height */
+  padding-bottom: 60px; /* Match footer height */
+  min-height: calc(100vh - 140px); /* Viewport height - (header + footer heights) */
+}
+
+.syllabus-container {
+  margin-bottom: 35px;
+  margin-top: 0; /* Remove top margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Remove height: 100% */
+}
+
+.topics-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 body {
  
   font-family: Arial, sans-serif;
@@ -40,14 +61,6 @@ h1, h2 {
 /* Add these adjustments to your existing CSS */
 
 /* Remove height: 100% from syllabus-container */
-.syllabus-container {
-  margin-bottom: 35px;
-  margin-top: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Remove height: 100% */
-}
 
 /* Add margin to the topics container */
 .topics-container {
