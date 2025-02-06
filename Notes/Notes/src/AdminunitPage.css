@@ -33,13 +33,13 @@ h1, h2 {
 
 /* Main Container */
 .container {
-  margin-top:50px;
+  margin-top: 80px;;
 }
 
 /* Syllabus Card */
 .syllabus-container {
   margin-bottom: 35px;
-  margin-top: 35px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
