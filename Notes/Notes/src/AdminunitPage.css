@@ -9,6 +9,16 @@
   border-radius: 0.25rem; /* Optional rounded corners */
   background-color: #ffffff; /* Background color */
 }
+@media (max-width: 1024px) {
+  .scrollable-container{
+    max-height:500px;
+  }
+}  
+@media (max-width: 768px) {
+   .scrollable-container{
+    max-height:400px;
+  }
+}  
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
