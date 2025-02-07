@@ -57,12 +57,12 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
-      <main className="main-container mt-5">
+      <main className="container mt-5">
         <div className="row">
           <div className="col-12">
-            <div className="topic-container">
+            <div className="container">
               {userRole === 'admin' && (
-                <div className="tsyllabus-container">
+                <div className="syllabus-container">
                   <div className="syllabus-card text-center">
                     <h4>Add a Topic</h4>
                     {error && <p className="text-danger">{error}</p>}
