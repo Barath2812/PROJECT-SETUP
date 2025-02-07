@@ -75,7 +75,7 @@ h1, h2 {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .tsyllabus-container {
-    margin-top: 175px; /* Margin for mobile */
+    margin-top: 250px; /* Margin for mobile */
     padding: 15px; /* Less padding on mobile */
   }
 }
