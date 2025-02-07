@@ -38,14 +38,14 @@ const TopicPage = ({ userRole }) => {
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
             <h1 className="navbar-brand">SATHYABAMA</h1>
-            <button4
+            <button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
             >
               <span className="navbar-toggler-icon"></span>
-            </button4>
+            </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
@@ -63,7 +63,7 @@ const TopicPage = ({ userRole }) => {
             <div className="topic-container">
               {userRole === 'admin' && (
                 <div className="tsyllabus-container">
-                  <div className="tsyllabus-card text-center">
+                  <div className="syllabus-card text-center">
                     <h4>Add a Topic</h4>
                     {error && <p className="text-danger">{error}</p>}
                     {success && <p className="text-success">{success}</p>}
