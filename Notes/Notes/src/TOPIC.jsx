@@ -179,6 +179,7 @@ const TopicPage = ({ userRole }) => {
         )}
            </div>
     </div>
+    </div>
    <div className="row ">
      <div className="col-12">
         <div className="mt-4">
@@ -209,7 +210,7 @@ const TopicPage = ({ userRole }) => {
             <p>No topics added yet.</p>
           )}
         </div>
-     </div
+     </div>
      </div>
    
     </main>
