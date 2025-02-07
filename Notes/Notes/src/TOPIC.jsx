@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./AdminunitPage.css"; // Import the CSS file for styling
+import "./topic.css"; // Import the CSS file for styling
 import { Link } from "react-router-dom";
 
 const TopicPage = ({ userRole }) => {
