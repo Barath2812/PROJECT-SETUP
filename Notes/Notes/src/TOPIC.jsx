@@ -179,7 +179,7 @@ const TopicPage = ({ userRole }) => {
         )}
 
        <div className="mt-4">
-  <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
+  <h4 className='mb-5'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
   
   <div className="scrollable-container"> {/* Scrollable container */}
     {topics.length > 0 ? (
