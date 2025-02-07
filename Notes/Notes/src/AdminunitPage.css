@@ -2,7 +2,7 @@
 
 /* Scrollable container styles */
 .scrollable-container {
-  max-height: 400px; /* Set a maximum height */
+  max-height: 600px; /* Set a maximum height */
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 10px; /* Optional padding */
   border: 1px solid #dee2e6; /* Optional border for better visibility */
