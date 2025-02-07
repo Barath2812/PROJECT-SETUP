@@ -165,7 +165,7 @@ const TopicPage = ({ userRole }) => {
         
 
         {userRole === 'admin' && (
-          <div className="syllabus-container ">
+          <div className="tsyllabus-container ">
             <div className="syllabus-card text-center ">
               <h4>Add a Topic</h4>
               {error && <p className="text-danger">{error}</p>}
