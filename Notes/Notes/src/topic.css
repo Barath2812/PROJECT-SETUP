@@ -1,16 +1,1 @@
 
-/* Topic container styles */
-.topic-container {
-  margin-top: 80px; /* Space for fixed navbar */
-}
-
-/* Syllabus card styles */
-.tsyllabus-card {
-  background-color: #ffffff; /* White background for the card */
-  border: 1px solid #dee2e6; /* Light border */
-  border-radius: 0.25rem; /* Rounded corners */
-  padding: 20px; /* Padding inside the card */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-
