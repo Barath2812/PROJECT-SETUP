@@ -45,15 +45,7 @@ h1, h2 {
 
 /* Main Container */
 .container {
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  gap:20px;
-}
-@media(min-width:768px){
-  margin-top: 45px;
-}
-@media(min-width:1024px){
+ 
   margin-top: 20px;
 }
 /* Syllabus Card */
