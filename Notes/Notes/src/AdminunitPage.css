@@ -1,4 +1,14 @@
+/* AdminunitPage.css */
 
+/* Scrollable container styles */
+.scrollable-container {
+  max-height: 400px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Optional padding */
+  border: 1px solid #dee2e6; /* Optional border for better visibility */
+  border-radius: 0.25rem; /* Optional rounded corners */
+  background-color: #ffffff; /* Background color */
+}
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
