@@ -45,28 +45,34 @@ h1, h2 {
 
 /* Main Container */
 .container {
-  margin-top: 20px;;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
 }
-
+@media(min-width:768px){
+  margin-top: 45px;
+}
+@media(min-width:1024px){
+  margin-top: 20px;
+}
 /* Syllabus Card */
 /* Add these adjustments to your existing CSS */
 
 /* Remove height: 100% from syllabus-container */
 
 /* Add margin to the topics container */
-.topics-container {
-  margin-bottom: 100px; /* Ensures space before footer */
-}
+
 
 /* Adjust card styling for better spacing */
 .card {
   margin-bottom: 20px; /* Space between topic cards */
 }
 
-/* Ensure footer stays at bottom */
-footer {
-  position: relative;
-  margin-top: auto; /* Pushes footer to bottom */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
 }
 
 
