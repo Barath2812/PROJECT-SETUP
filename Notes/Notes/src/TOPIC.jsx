@@ -161,6 +161,7 @@ const TopicPage = ({ userRole }) => {
       <main className="container">
         <div className="topic-container">
       <div className="row">
+         <div className="col-12">
         {/* Replace the h2 with the h4 displaying course information */}
        
         {userRole === 'admin' && (
@@ -176,8 +177,10 @@ const TopicPage = ({ userRole }) => {
             </div>
           </div>
         )}
+           </div>
     </div>
    <div className="row ">
+     <div className="col-12">
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
@@ -206,6 +209,7 @@ const TopicPage = ({ userRole }) => {
             <p>No topics added yet.</p>
           )}
         </div>
+     </div
      </div>
           </div>
     </main>
