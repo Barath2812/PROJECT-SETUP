@@ -54,6 +54,14 @@ h1, h2 {
   align-items: center;
   height: 100%;
 }
+.tsyllabus-container {
+  margin-bottom: 35px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 .syllabus-card {
   background-color: #ffffff; /* White background for the card */
