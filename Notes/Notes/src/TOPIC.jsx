@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -134,7 +135,7 @@ const TopicPage = ({ userRole }) => {
   };
 
   return (
-    <div className="col-12 bg-light ">
+    <div className="col-12 bg-light d-flex flex-column min-vh-100">
       <header className="fixed-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
@@ -158,13 +159,11 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
-      <main className="container">
-        <div className="row">
-         <div className="col-12">
-        <div className="topic-container">
-      
+
+      <main className="container flex-grow-1 mt-5 pt-5">
         {/* Replace the h2 with the h4 displaying course information */}
-       
+        
+
         {userRole === 'admin' && (
           <div className="syllabus-container ">
             <div className="syllabus-card text-center ">
@@ -178,11 +177,7 @@ const TopicPage = ({ userRole }) => {
             </div>
           </div>
         )}
-           </div>
-    </div>
-    </div>
-   <div className="row ">
-     <div className="col-12">
+
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
           
@@ -211,11 +206,7 @@ const TopicPage = ({ userRole }) => {
             <p>No topics added yet.</p>
           )}
         </div>
-     </div>
-     </div>
-   
-    </main>
- 
+      </main>
 
       <footer className="text-white text-center py-3">
         <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
