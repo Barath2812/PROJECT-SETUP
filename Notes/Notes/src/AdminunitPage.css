@@ -62,7 +62,18 @@ h1, h2 {
   align-items: center;
   height: 100%;
 }
+@media (max-width: 1024px) { /* Adjust the max-width as needed for your tablet breakpoint */
+  .tsyllabus-container {
+    margin-top: 160px; /* Margin for tablets */
+  }
+}
 
+/* Media query for mobile devices */
+@media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
+  .tsyllabus-container {
+    margin-top: 175px; /* Margin for mobile */
+  }
+}
 .syllabus-card {
   background-color: #ffffff; /* White background for the card */
   border-radius: 8px; /* Rounded corners */
