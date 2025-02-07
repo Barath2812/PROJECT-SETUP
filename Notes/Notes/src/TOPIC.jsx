@@ -178,34 +178,36 @@ const TopicPage = ({ userRole }) => {
           </div>
         )}
 
-        <div className="mt-4">
-        <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
-          
-          {topics.length > 0 ? (
-            <div className="row">
-              {topics.map((topic, index) => (
-                <div className="col-md-4 mb-3" key={index}>
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">{topic.topicName}</h5>
-                      {topic.notesLink && (
-                        <a href={topic.notesLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2">Notes</a>
-                      )}
-                      {topic.youtubeLink && (
-                        <a href={topic.youtubeLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary me-2">YouTube</a>
-                      )}
-                      {userRole === 'admin' && (
-                        <button onClick={() => deleteTopic(topic.topicName)} className="btn btn-danger">Delete</button>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
+       <div className="mt-4">
+  <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
+  
+  <div className="scrollable-container"> {/* Scrollable container */}
+    {topics.length > 0 ? (
+      <div className="row">
+        {topics.map((topic, index) => (
+          <div className="col-md-4 mb-3" key={index}>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">{topic.topicName}</h5>
+                {topic.notesLink && (
+                  <a href={topic.notesLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2">Notes</a>
+                )}
+                {topic.youtubeLink && (
+                  <a href={topic.youtubeLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary me-2">YouTube</a>
+                )}
+                {userRole === 'admin' && (
+                  <button onClick={() => deleteTopic(topic.topicName)} className="btn btn-danger">Delete</button>
+                )}
+              </div>
             </div>
-          ) : (
-            <p>No topics added yet.</p>
-          )}
-        </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p>No topics added yet.</p>
+    )}
+  </div> {/* End of scrollable container */}
+</div>
       </main>
 
       <footer className="text-white text-center py-3">
