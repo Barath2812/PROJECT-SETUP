@@ -11,7 +11,13 @@
   /* Remove height: 100% */
 }
 
-
+.topic-container{
+  margin-bottom: 35px;
+  margin-top: 0; /* Remove top margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
  
   font-family: Arial, sans-serif;
