@@ -158,7 +158,8 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
-
+      <main className="container">
+        <div className="topic-container">
       <div className="row">
         {/* Replace the h2 with the h4 displaying course information */}
        
@@ -206,7 +207,8 @@ const TopicPage = ({ userRole }) => {
           )}
         </div>
      </div>
-    
+          </div>
+    </main>
  
 
       <footer className="text-white text-center py-3">
