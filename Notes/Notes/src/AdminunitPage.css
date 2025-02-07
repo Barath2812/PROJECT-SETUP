@@ -1,25 +1,7 @@
 
+
 /* General Styles */
-/* Add these to your existing CSS */
-
-.syllabus-container {
-  margin-bottom: 35px;
-  margin-top: 0; /* Remove top margin */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Remove height: 100% */
-}
-
-.topic-container{
-  margin-bottom: 35px;
-  margin-top: 0; /* Remove top margin */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 body {
- 
   font-family: Arial, sans-serif;
   background-color: #f8f9fa; /* Light background for the entire page */
 }
@@ -51,28 +33,18 @@ h1, h2 {
 
 /* Main Container */
 .container {
- 
   margin-top: 20px;
 }
+
 /* Syllabus Card */
-/* Add these adjustments to your existing CSS */
-
-/* Remove height: 100% from syllabus-container */
-
-/* Add margin to the topics container */
-
-
-/* Adjust card styling for better spacing */
-.card {
-  margin-bottom: 20px; /* Space between topic cards */
-}
-
-.row {
+.syllabus-container {
+  margin-bottom: 35px;
+  margin-top: 35px;
   display: flex;
-  flex-wrap: wrap;
-
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-
 
 .syllabus-card {
   background-color: #ffffff; /* White background for the card */
