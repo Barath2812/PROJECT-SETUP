@@ -175,7 +175,7 @@ const TopicPage = ({ userRole }) => {
             </div>
           </div>
         )}
-
+    </div>
    <div className="row ">
         <div className="mt-4">
         <h4 className='mb-4'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
@@ -207,8 +207,7 @@ const TopicPage = ({ userRole }) => {
         </div>
      </div>
     
-        
-      </div>
+ 
 
       <footer className="text-white text-center py-3">
         <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
