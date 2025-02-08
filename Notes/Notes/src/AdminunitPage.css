@@ -1,24 +1,59 @@
 /* AdminunitPage.css */
 
 /* Scrollable container styles */
+/* Scrollable container styles */
 .scrollable-container {
   max-height: 600px; /* Set a maximum height */
   overflow-y: auto; /* Enable vertical scrolling */
-  padding: 10px; /* Optional padding */
+  padding: 15px; /* Increased padding for better spacing */
   border: 1px solid #dee2e6; /* Optional border for better visibility */
-  border-radius: 0.25rem; /* Optional rounded corners */
+  border-radius: 0.5rem; /* Slightly larger rounded corners */
   background-color: #ffffff; /* Background color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 20px; /* Space above the container */
 }
+
 @media (max-width: 1024px) {
-  .scrollable-container{
-    max-height:500px;
+  .scrollable-container {
+    max-height: 500px; /* Adjust max height for tablets */
+    padding: 12px; /* Slightly reduced padding */
   }
-}  
+}
+
 @media (max-width: 768px) {
-   .scrollable-container{
-    max-height:450px;
+  .scrollable-container {
+    max-height: 400px; /* Further adjust max height for mobile */
+    padding: 10px; /* Further reduced padding */
   }
-}  
+}
+
+/* Syllabus Container Styles */
+.tsyllabus-container {
+  margin: 20px auto; /* Center the container with auto margins */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 20px; /* Add padding for better spacing */
+  width: 100%; /* Full width of the parent */
+  max-width: 600px; /* Maximum width for the container */
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+@media (max-width: 1024px) {
+  .tsyllabus-container {
+    margin-top: 30px; /* Adjust margin for tablets */
+    padding: 15px; /* Slightly reduced padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .tsyllabus-container {
+    margin-top: 40px; /* Adjust margin for mobile */
+    padding: 10px; /* Further reduced padding */
+  }
+}
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -63,31 +98,6 @@ h1, h2 {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-.tsyllabus-container {
-  margin-bottom: 35px; /* Space below the container */
-  margin-top: 150px; /* Default margin for laptops */
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  flex-direction: column; /* Stack children vertically */
-  height: auto; /* Allow height to adjust based on content */
-  padding: 20px; /* Add padding for better spacing */
-}
-
-/* Media query for tablets */
-@media (max-width: 1024px) {
-  .tsyllabus-container {
-    margin-top: 160px; /* Margin for tablets */
-  }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .tsyllabus-container {
-    margin-top: 250px; /* Margin for mobile */
-    padding: 15px; /* Less padding on mobile */
-  }
 }
 
 /* Syllabus card styles */
