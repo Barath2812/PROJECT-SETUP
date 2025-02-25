@@ -45,8 +45,8 @@
 
 @media (max-width: 1024px) {
   .tsyllabus-container {
-    margin-top: 30px; /* Adjust margin for tablets */
-    padding: 15px; /* Slightly reduced padding */
+    margin-top: 40px; /* Adjust margin for tablets */
+    padding: 10px; /* Slightly reduced padding */
   }
 }
 
