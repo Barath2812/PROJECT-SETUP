@@ -131,29 +131,8 @@ const AdminunitPage = () => {
       </div>
       
       </main>
-      <footer className="p-3 mt-5 text-white">
-        <div className="row">
-          <div className="col-12 col-lg-6 pt-1">
-            <p className="mb-0 pt-2 text-center">
-              &copy; 2023 Sathyabama Institute of Science and Technology. All
-              rights reserved.
-            </p>
-          </div>
-          <div className="col-12 col-lg-6 pt-1 d-flex justify-content-start justify-content-lg-end">
-            <ul className="list-inline col-12 col-lg-6">
-              <li className="list-inline-item">
-                <a className="text-white text-decoration-none" href="">
-                  Privacy Policy
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a className="text-white text-decoration-none" href="">
-                  Terms and Condition
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+     <footer className="text-white text-center py-3">
+        <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
       </footer>
     </div>
 
