@@ -135,8 +135,8 @@ const TopicPage = ({ userRole }) => {
   };
 
   return (
-     <div className="col-12 bg-light d-flex flex-column min-vh-100">
-     <header className="fixed-top">
+    <div className="col-12 bg-light d-flex flex-column min-vh-100">
+      <header className="fixed-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
             <h1 className="navbar-brand">SATHYABAMA</h1>
@@ -159,13 +159,12 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
- 
-     
 
       <main className="container flex-grow-1 mt-5 pt-5">
+        {/* Replace the h2 with the h4 displaying course information */}
+        
+
         {userRole === 'admin' && (
-      
-<div className="scrollable-container">
           <div className="tsyllabus-container ">
             <div className="syllabus-card text-center ">
               <h4>Add a Topic</h4>
@@ -177,8 +176,6 @@ const TopicPage = ({ userRole }) => {
               <button onClick={addTopic} className="btn btn-success">Add Topic</button>
             </div>
           </div>
-
-    
         )}
 
        <div className="mt-4">
@@ -211,7 +208,6 @@ const TopicPage = ({ userRole }) => {
     )}
   </div> {/* End of scrollable container */}
 </div>
-  </div>
       </main>
 
       <footer className="text-white text-center py-3">
