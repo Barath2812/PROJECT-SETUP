@@ -163,7 +163,7 @@ const TopicPage = ({ userRole }) => {
       <main className="container flex-grow-1 mt-5 pt-5">
         {/* Replace the h2 with the h4 displaying course information */}
         
-<div className="scrollable-container">
+<div className="scrollable-container bg-secondary">
         {userRole === 'admin' && (
           <div className="tsyllabus-container ">
             <div className="syllabus-card text-center ">
