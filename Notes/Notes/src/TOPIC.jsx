@@ -159,9 +159,9 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
-   </div>
+ 
      
- <div className="col-12 bg-light d-flex flex-column min-vh-100">
+
       <main className="container flex-grow-1 mt-5 pt-5">
         {userRole === 'admin' && (
       
@@ -177,7 +177,7 @@ const TopicPage = ({ userRole }) => {
               <button onClick={addTopic} className="btn btn-success">Add Topic</button>
             </div>
           </div>
-  </div>
+
     
         )}
 
@@ -211,6 +211,7 @@ const TopicPage = ({ userRole }) => {
     )}
   </div> {/* End of scrollable container */}
 </div>
+  </div>
       </main>
 
       <footer className="text-white text-center py-3">
