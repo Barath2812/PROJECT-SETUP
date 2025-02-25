@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
   .scrollable-container {
-    max-height: 720px; /* Further adjust max height for mobile */
+    max-height: 700px; /* Further adjust max height for mobile */
     padding: 10px; /* Further reduced padding */
   }
 }
@@ -58,7 +58,7 @@
 
 @media (max-width: 768px) {
   .tsyllabus-container {
-    margin-top: 40px; /* Adjust margin for mobile */
+    margin-top: 35px; /* Adjust margin for mobile */
     padding: 10px; /* Further reduced padding */
   }
 }
