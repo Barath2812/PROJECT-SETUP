@@ -166,8 +166,7 @@ const TopicPage = ({ userRole }) => {
 
         {userRole === 'admin' && (
       
-<div className="grid grid-cols-5 grid-rows-5 gap-4">
-    <div className="col-span-5 row-span-5">
+<div className="scrollable-container">
           <div className="tsyllabus-container ">
             <div className="syllabus-card text-center ">
               <h4>Add a Topic</h4>
@@ -179,8 +178,8 @@ const TopicPage = ({ userRole }) => {
               <button onClick={addTopic} className="btn btn-success">Add Topic</button>
             </div>
           </div>
-      </div>
   </div>
+    
         )}
 
        <div className="mt-4">
