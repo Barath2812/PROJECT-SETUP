@@ -158,7 +158,7 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
-    <div className="col-12 bg-light d-flex flex-column min-vh-100">
+   
      
 
       <main className="container flex-grow-1 mt-5 pt-5">
@@ -218,7 +218,7 @@ const TopicPage = ({ userRole }) => {
       <footer className="text-white text-center py-3">
         <p>&copy; 2023 SATHYABAMA University. All rights reserved.</p>
       </footer>
-    </div>
+    
   );
 };
 
