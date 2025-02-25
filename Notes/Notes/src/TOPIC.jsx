@@ -135,8 +135,7 @@ const TopicPage = ({ userRole }) => {
   };
 
   return (
-    <div className="col-12 bg-light d-flex flex-column min-vh-100">
-      <header className="fixed-top">
+     <header className="fixed-top">
         <nav className="navbar navbar-dark navbar-expand-lg">
           <div className="container">
             <h1 className="navbar-brand">SATHYABAMA</h1>
@@ -159,6 +158,8 @@ const TopicPage = ({ userRole }) => {
           </div>
         </nav>
       </header>
+    <div className="col-12 bg-light d-flex flex-column min-vh-100">
+     
 
       <main className="container flex-grow-1 mt-5 pt-5">
         {/* Replace the h2 with the h4 displaying course information */}
