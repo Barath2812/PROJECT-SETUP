@@ -45,14 +45,20 @@
 
 @media (max-width: 1024px) {
   .tsyllabus-container {
-    margin-top: 40px; /* Adjust margin for tablets */
-    padding: 10px; /* Slightly reduced padding */
+    margin-top: 50px; /* Adjust margin for tablets */
+    padding: 15px; /* Slightly reduced padding */
   }
 }
 
 @media (max-width: 768px) {
   .tsyllabus-container {
     margin-top: 40px; /* Adjust margin for mobile */
+    padding: 10px; /* Further reduced padding */
+  }
+}
+@media (max-width: 1280px) {
+  .tsyllabus-container {
+    margin-top: 60px; /* Adjust margin for mobile */
     padding: 10px; /* Further reduced padding */
   }
 }
