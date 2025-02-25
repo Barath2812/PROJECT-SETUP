@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
   .scrollable-container {
-    max-height: 600px; /* Further adjust max height for mobile */
+    max-height: 720px; /* Further adjust max height for mobile */
     padding: 10px; /* Further reduced padding */
   }
 }
