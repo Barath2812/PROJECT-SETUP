@@ -181,7 +181,7 @@ const TopicPage = ({ userRole }) => {
        <div className="mt-4">
   <h4 className='mb-5'>{`${regulation} | ${year} | ${semester} | ${course} | Unit: ${unitNumber} Topics`}</h4>
   
-  <div className="scrollable-container"> {/* Scrollable container */}
+ 
     {topics.length > 0 ? (
       <div className="row">
         {topics.map((topic, index) => (
@@ -206,7 +206,7 @@ const TopicPage = ({ userRole }) => {
     ) : (
       <p>No topics added yet.</p>
     )}
-  </div> {/* End of scrollable container */}
+ 
 </div>
   </div>
       </main>
