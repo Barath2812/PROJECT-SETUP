@@ -92,7 +92,7 @@ const AdminCourseSelection = () => {
       <header className="sticky-top">
         <nav className="navbar navbar-dark navbar-expand-lg navbar-expand-md navbar-expand-sm">
           <div className="container">
-            <h1 className="navbar-brand">HARI HARAN</h1>
+            <h1 className="navbar-brand">SATHYABAMA</h1>
             <button4
               className="navbar-toggler"
               type="button"
