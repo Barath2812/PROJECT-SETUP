@@ -1,32 +1,30 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './GetStartedPage.module.css'; // Ensure to import styles for the design
+import styles from './GetStartedPage.module.css'; // Ensure styles are imported
 
 const GetStartedPage = () => {
   const [role, setRole] = useState('student');
   const [loginData, setLoginData] = useState({ username: '', password: '' });
+  const [loading, setLoading] = useState(false); // ✅ loading state
   const navigate = useNavigate();
 
-  // Handle the role change and toggle admin login form visibility
   const handleRoleChange = (e) => {
     setRole(e.target.value);
-    localStorage.setItem("role", role);
+    localStorage.setItem("role", e.target.value); // ✅ fix: store selected value
   };
 
-  // Handle input changes for username and password
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     setLoginData({ ...loginData, [id]: value });
   };
 
-  const handleClick = (e) => {
-    navigate('/student-course-selection')
+  const handleClick = () => {
+    navigate('/student-course-selection');
   };
-  
 
-  // Handle login form submission
   const handleLoginSubmit = (e) => {
     e.preventDefault();
+    setLoading(true); // ✅ Show loader
 
     fetch('https://project-setup-vcdb.onrender.com/login', {
       method: 'POST',
@@ -37,11 +35,11 @@ const GetStartedPage = () => {
     })
       .then((response) => response.json())
       .then((data) => {
+        setLoading(false); // ✅ Hide loader
+
         if (data.message === 'Login successful') {
-          // Save role to localStorage after successful login
           localStorage.setItem('role', role);
 
-          // Redirect based on role after successful login
           if (role === 'admin') {
             navigate('/admin-course-selection');
           }
@@ -50,6 +48,7 @@ const GetStartedPage = () => {
         }
       })
       .catch((error) => {
+        setLoading(false); // ✅ Hide loader
         alert('Error: ' + error.message);
       });
   };
@@ -57,7 +56,7 @@ const GetStartedPage = () => {
   return (
     <div className={styles.total}>
       <div className={styles.getstartedcontainer}>
-        <img className={styles.logo} />
+        <img className={styles.logo} alt="Logo" />
         <h3>SATHYABAMA</h3>
         <h5>DEPT OF INFORMATION TECHNOLOGY</h5>
         <h6>Click Here To Get Started Learning</h6>
@@ -108,6 +107,14 @@ const GetStartedPage = () => {
           </button>
         )}
       </div>
+
+      {/* ✅ Loader Overlay */}
+      {loading && (
+        <div className={styles.loaderOverlay}>
+          <div className={styles.loader}></div>
+          <p style={{ color: 'white', marginTop: '10px' }}>Logging in...</p>
+        </div>
+      )}
     </div>
   );
 };
