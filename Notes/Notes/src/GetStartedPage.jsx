@@ -56,7 +56,6 @@ const GetStartedPage = () => {
   return (
     <div className={styles.total}>
       <div className={styles.getstartedcontainer}>
-        <img className={styles.logo} alt="Logo" />
         <h3>SATHYABAMA</h3>
         <h5>DEPT OF INFORMATION TECHNOLOGY</h5>
         <h6>Click Here To Get Started Learning</h6>
